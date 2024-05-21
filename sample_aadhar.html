@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Aadhaar Card</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .aadhar-card {
+            width: 600px;
+            height: 350px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            border-radius: 10px;
+            position: relative;
+            color: #000;
+            border: 1px solid #ccc;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .aadhar-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid #000;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+        }
+        .aadhar-header img {
+            height: 60px;
+        }
+        .aadhar-header h1 {
+            font-size: 28px;
+            margin: 0;
+            color: #FF5722;
+        }
+        .aadhar-photo {
+            width: 120px;
+            height: 150px;
+            background-color: #ccc;
+            border: 1px solid #333;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+        .aadhar-photo img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .aadhar-details {
+            flex: 1;
+            margin-top: 20px;
+            padding: 0 20px;
+        }
+        .detail {
+            margin-bottom: 8px;
+            font-size: 18px;
+        }
+        .detail span {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+        }
+        .aadhar-number {
+            font-size: 22px;
+            font-weight: bold;
+            text-align: center;
+        }
+        .aadhar-barcode {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .aadhar-barcode img {
+            max-width: 100%;
+            height: auto;
+        }
+        .aadhar-footer {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 10px 20px;
+            border-top: 1px solid #ccc;
+        }
+        .aadhar-footer img {
+            height: 30px;
+            margin-right: 10px;
+        }
+        .aadhar-footer span {
+            font-size: 14px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="aadhar-card">
+        <div class="aadhar-header">
+            <img src="./indian_emblem.svg" alt="India Emblem">
+            <h1>आधार</h1>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/UIDAI_Logo.svg" alt="UIDAI Logo" style="height: 60px;">
+        </div>
+        <div class="aadhar-photo">
+            <img src="https://picsum.photos/120/150" alt="Dummy Photo">
+        </div>
+        <div class="aadhar-details">
+            <div class="detail"><span>Name:</span> Rohan Sharma</div>
+            <div class="detail"><span>DOB:</span> 01-Jan-1990</div>
+            <div class="detail"><span>Gender:</span> Male</div>
+            <div class="detail"><span>Address:</span> New Delhi, India</div>
+        </div>
+        <div class="aadhar-footer">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/d/d3/Flag_of_India.svg" alt="India Flag">
+            <span>Government of India</span>
+        </div>
+        <div class="aadhar-barcode">
+            <img src="https://barcode.tec-it.com/barcode.ashx?data=123456789123&code=Code128&translate-esc=false&unit=Fit&dpi=96&imagetype=Gif&rotation=0&color=%23000000&bgcolor=%23ffffff&quiet=0&size=Medium&printdata=false&download=true" alt="Barcode">
+        </div>
+    </div>
+</body>
+</html>
