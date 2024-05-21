@@ -43,6 +43,9 @@ def create_directory(directory_path):
         print(f"Failed to create directory {directory_path}. Reason: {e}")
 
 def main():
+    original_directory = './docs/input/invoices/Dataset with valid information'
+    clean_directory(original_directory)
+
     image_directory = './docs/input/invoices/processed/images'
     clean_directory(image_directory)
 
@@ -61,6 +64,17 @@ def main():
     validation_directory = './docs/models/donut/data/img/train'
     clean_directory(validation_directory)
 
-    
+    data_key_directory = './docs/models/donut/data/key'
+    clean_directory(data_key_directory)
+
+    sparraw_ui_json_directory = '../sparrow-ui/docs/json'
+    clean_directory(sparraw_ui_json_directory)
+
+    sparraw_ui_json_key_directory = '../sparrow-ui/docs/json/key'
+    create_directory(sparraw_ui_json_key_directory)
+
+    data_key_image_directory = '../docs/models/donut/data/key/img'
+    create_directory(data_key_image_directory)
+
 if __name__ == '__main__':
     main()
